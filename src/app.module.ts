@@ -24,14 +24,14 @@ import { PasswordReset } from './entities/password-reset.entity';
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: 'yourPassword',
+      password: 'Kvazimodo123',
       database: 'parking-app',
       entities: [User, Car, ParkingArea, ParkingService, PasswordReset],
       synchronize: true,
     }),
     JwtModule.register({
-      secret: 'jwtConstants.secret', // Replace with your own secret key
-      signOptions: { expiresIn: '1h' }, // Adjust token expiration time as needed
+      secret: 'jwtConstants.secret',
+      signOptions: { expiresIn: '1h' },
     }),
     ParkingServiceModule,
     ParkingAreaModule,
