@@ -24,7 +24,7 @@ import { PasswordReset } from './entities/password-reset.entity';
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: 'Kvazimodo123',
+      password: 'Your-password',
       database: 'parking-app',
       entities: [User, Car, ParkingArea, ParkingService, PasswordReset],
       synchronize: true,
